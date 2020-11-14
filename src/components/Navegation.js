@@ -7,7 +7,7 @@ export default class Navegation extends Component {
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div className="container">
-                        <Link className="navbar-brand" to="/">Aplicación de Notas</Link>
+                        <Link className="navbar-brand" to="/mern-stack-frontend">Aplicación de Notas</Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon" />
                         </button>
