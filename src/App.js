@@ -15,10 +15,10 @@ function App() {
     <Router>
 
       <Navegation></Navegation>
-      <Route path="/" exact component={Notes} />
-      <Route path="/edit/:id" exact component={CreateNote} />
-      <Route path="/create" exact component={CreateNote} />
-      <Route path="/user" exact component={Users} />
+      <Route path="/mern-stack-frontend" exact component={Notes} />
+      <Route path="/mern-stack-frontend/edit/:id" exact component={CreateNote} />
+      <Route path="/mern-stack-frontend/create" exact component={CreateNote} />
+      <Route path="/mern-stack-frontend/user" exact component={Users} />
 
     </Router>
   );

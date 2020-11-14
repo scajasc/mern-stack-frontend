@@ -54,7 +54,7 @@ function CreateNote(props) {
             console.log(res);
         }
 
-        history.push('/')
+        history.push('/mern-stack-frontend')
     }
 
     onsubmit = (e) => {
