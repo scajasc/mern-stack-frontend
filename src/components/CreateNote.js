@@ -2,6 +2,7 @@ import React, { Component, useState, useEffect } from 'react'
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import 'react-datepicker/dist/react-datepicker.css';
+import { useHistory } from "react-router-dom";
 
 
 function CreateNote(props) {
@@ -15,6 +16,7 @@ function CreateNote(props) {
         date: date
     }]);
     const [tiltle, setTitle] = useState('');
+    let history = useHistory();
 
     /* Variables de entorno  */
     const [urlNotas, setUrlNotas] = useState(process.env.REACT_APP_URI_NOTAS);
@@ -22,7 +24,7 @@ function CreateNote(props) {
     const [urlUsers, setUrlUsers] = useState(process.env.REACT_APP_URI_USERS);
 
     useEffect(() => {
-        // Actualiza el título del documento usando la API del navegador
+        // Actualiza el título del documento usando la API del navegadors
         getUsers();
         changeTitle();
         getNota();
@@ -52,7 +54,7 @@ function CreateNote(props) {
             console.log(res);
         }
 
-        window.location.href = '/';
+        history.push('/')
     }
 
     onsubmit = (e) => {
