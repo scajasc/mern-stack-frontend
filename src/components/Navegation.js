@@ -14,13 +14,13 @@ export default class Navegation extends Component {
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item active">
-                                    <Link className="nav-link" to="/">Notas <span className="sr-only">(current)</span></Link>
+                                    <Link className="nav-link" to="/mern-stack-frontend">Notas <span className="sr-only">(current)</span></Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="create">Crear Notas</Link>
+                                    <Link className="nav-link" to="/mern-stack-frontend/create">Crear Notas</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="user">Crear Usuario</Link>
+                                    <Link className="nav-link" to="/mern-stack-frontend/user">Crear Usuario</Link>
                                 </li>
 
                             </ul>
