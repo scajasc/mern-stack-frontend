@@ -36,7 +36,7 @@ function Notes() {
                             <div className="card" key={nota._id} >
                                 <div className="card-header bg-dark text-white d-flex justify-content-between">
                                     <h4>{nota.title}</h4>
-                                    <Link className="btn btn-secondary" to={"/edit/" + nota._id}>
+                                    <Link className="btn btn-secondary" to={"/mern-stack-frontend/edit/" + nota._id}>
                                         Editar
                                     </Link>
                                 </div>
